@@ -1,0 +1,9 @@
+{
+  "label": "Desenvolvimento",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/doc-projeto-desenvolvimento",
+    "description": "Rodar, testar, frontend, git e commits, deploy."
+  }
+}

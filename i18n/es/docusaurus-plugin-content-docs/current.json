@@ -1,0 +1,110 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.guiaDoUsuario.category.Primeiros passos": {
+    "message": "Primeiros passos",
+    "description": "The label for category 'Primeiros passos' in sidebar 'guiaDoUsuario'"
+  },
+  "sidebar.guiaDoUsuario.category.Primeiros passos.link.generated-index.description": {
+    "message": "Entrar no DS30, criar projetos e compartilhar com o time.",
+    "description": "The generated-index page description for category 'Primeiros passos' in sidebar 'guiaDoUsuario'"
+  },
+  "sidebar.guiaDoUsuario.category.Área de trabalho": {
+    "message": "Área de trabalho",
+    "description": "The label for category 'Área de trabalho' in sidebar 'guiaDoUsuario'"
+  },
+  "sidebar.guiaDoUsuario.category.Área de trabalho.link.generated-index.description": {
+    "message": "Uma página por aba da área de trabalho de um relatório.",
+    "description": "The generated-index page description for category 'Área de trabalho' in sidebar 'guiaDoUsuario'"
+  },
+  "sidebar.guiaDoUsuario.category.Ingestão de dados": {
+    "message": "Ingestão de dados",
+    "description": "The label for category 'Ingestão de dados' in sidebar 'guiaDoUsuario'"
+  },
+  "sidebar.guiaDoUsuario.category.Ingestão de dados.link.generated-index.description": {
+    "message": "Como trazer dados para o relatório.",
+    "description": "The generated-index page description for category 'Ingestão de dados' in sidebar 'guiaDoUsuario'"
+  },
+  "sidebar.guiaDoUsuario.category.Texto com IA": {
+    "message": "Texto com IA",
+    "description": "The label for category 'Texto com IA' in sidebar 'guiaDoUsuario'"
+  },
+  "sidebar.guiaDoUsuario.category.Texto com IA.link.generated-index.description": {
+    "message": "Campos de narrativa gerados com IA.",
+    "description": "The generated-index page description for category 'Texto com IA' in sidebar 'guiaDoUsuario'"
+  },
+  "sidebar.guiaDoUsuario.category.Gerando o diagnóstico": {
+    "message": "Gerando o diagnóstico",
+    "description": "The label for category 'Gerando o diagnóstico' in sidebar 'guiaDoUsuario'"
+  },
+  "sidebar.guiaDoUsuario.category.Gerando o diagnóstico.link.generated-index.description": {
+    "message": "Da área de trabalho ao Google Doc final.",
+    "description": "The generated-index page description for category 'Gerando o diagnóstico' in sidebar 'guiaDoUsuario'"
+  },
+  "sidebar.guiaDoUsuario.category.Solução de problemas": {
+    "message": "Solução de problemas",
+    "description": "The label for category 'Solução de problemas' in sidebar 'guiaDoUsuario'"
+  },
+  "sidebar.guiaDoUsuario.category.Solução de problemas.link.generated-index.description": {
+    "message": "Erros comuns e como resolvê-los.",
+    "description": "The generated-index page description for category 'Solução de problemas' in sidebar 'guiaDoUsuario'"
+  },
+  "sidebar.documentacaoDoProjeto.category.Visão geral e arquitetura": {
+    "message": "Visión general y arquitectura",
+    "description": "The label for category 'Visão geral e arquitetura' in sidebar 'documentacaoDoProjeto'"
+  },
+  "sidebar.documentacaoDoProjeto.category.Visão geral e arquitetura.link.generated-index.description": {
+    "message": "Qué es DS30, sus componentes, la arquitectura y la autenticación.",
+    "description": "The generated-index page description for category 'Visão geral e arquitetura' in sidebar 'documentacaoDoProjeto'"
+  },
+  "sidebar.documentacaoDoProjeto.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'documentacaoDoProjeto'"
+  },
+  "sidebar.documentacaoDoProjeto.category.API.link.generated-index.description": {
+    "message": "Cómo funciona la API del backend: convenciones y una página por router.",
+    "description": "The generated-index page description for category 'API' in sidebar 'documentacaoDoProjeto'"
+  },
+  "sidebar.documentacaoDoProjeto.category.Geração do documento": {
+    "message": "Generación del documento",
+    "description": "The label for category 'Geração do documento' in sidebar 'documentacaoDoProjeto'"
+  },
+  "sidebar.documentacaoDoProjeto.category.Geração do documento.link.generated-index.description": {
+    "message": "Del payload al Google Doc: flujo, payload v3, Apps Script y errores.",
+    "description": "The generated-index page description for category 'Geração do documento' in sidebar 'documentacaoDoProjeto'"
+  },
+  "sidebar.documentacaoDoProjeto.category.Integrações": {
+    "message": "Integraciones",
+    "description": "The label for category 'Integrações' in sidebar 'documentacaoDoProjeto'"
+  },
+  "sidebar.documentacaoDoProjeto.category.Integrações.link.generated-index.description": {
+    "message": "Google OAuth, Google Ads, GTM y GA4, ObservePoint, Gemini, Firebase y Apps Script.",
+    "description": "The generated-index page description for category 'Integrações' in sidebar 'documentacaoDoProjeto'"
+  },
+  "sidebar.documentacaoDoProjeto.category.Desenvolvimento": {
+    "message": "Desarrollo",
+    "description": "The label for category 'Desenvolvimento' in sidebar 'documentacaoDoProjeto'"
+  },
+  "sidebar.documentacaoDoProjeto.category.Desenvolvimento.link.generated-index.description": {
+    "message": "Ejecutar, probar, frontend, git y commits, despliegue.",
+    "description": "The generated-index page description for category 'Desenvolvimento' in sidebar 'documentacaoDoProjeto'"
+  },
+  "sidebar.documentacaoDoProjeto.category.Referência": {
+    "message": "Referencia",
+    "description": "The label for category 'Referência' in sidebar 'documentacaoDoProjeto'"
+  },
+  "sidebar.documentacaoDoProjeto.category.Referência.link.generated-index.description": {
+    "message": "Diccionario de datos, contrato de estado del UPD y variables de entorno.",
+    "description": "The generated-index page description for category 'Referência' in sidebar 'documentacaoDoProjeto'"
+  },
+  "sidebar.documentacaoDoProjeto.category.IA e agentes": {
+    "message": "IA y agentes",
+    "description": "The label for category 'IA e agentes' in sidebar 'documentacaoDoProjeto'"
+  },
+  "sidebar.documentacaoDoProjeto.category.IA e agentes.link.generated-index.description": {
+    "message": "Reglas para IA en el repositorio y documentos heredados.",
+    "description": "The generated-index page description for category 'IA e agentes' in sidebar 'documentacaoDoProjeto'"
+  }
+}

@@ -1,0 +1,10 @@
+/node_modules
+/build
+.docusaurus
+.cache-loader
+.claude/settings.local.json
+.DS_Store
+.env*
+npm-debug.log*
+# Snapshot do Polaris: só referência local.
+/reference

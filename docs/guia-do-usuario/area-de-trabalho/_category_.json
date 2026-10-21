@@ -1,0 +1,9 @@
+{
+  "label": "Área de trabalho",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/guia-do-usuario-area-de-trabalho",
+    "description": "Uma página por aba da área de trabalho de um relatório."
+  }
+}

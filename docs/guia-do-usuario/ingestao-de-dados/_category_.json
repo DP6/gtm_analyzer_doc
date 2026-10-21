@@ -1,0 +1,9 @@
+{
+  "label": "Ingestão de dados",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/guia-do-usuario-ingestao-de-dados",
+    "description": "Como trazer dados para o relatório."
+  }
+}

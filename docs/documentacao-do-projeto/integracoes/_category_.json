@@ -1,0 +1,9 @@
+{
+  "label": "Integrações",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/doc-projeto-integracoes",
+    "description": "Google OAuth, Google Ads, GTM e GA4, ObservePoint, Gemini, Firebase e Apps Script."
+  }
+}

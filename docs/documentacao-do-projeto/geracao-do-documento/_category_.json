@@ -1,0 +1,9 @@
+{
+  "label": "Geração do documento",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/doc-projeto-geracao-do-documento",
+    "description": "Do payload ao Google Doc: fluxo, payload v3, Apps Script e erros."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "Visão geral e arquitetura",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/doc-projeto-visao-geral-e-arquitetura",
+    "description": "O que é o DS30, seus componentes, a arquitetura e a autenticação."
+  }
+}

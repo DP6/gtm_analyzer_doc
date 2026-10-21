@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "DS30 Docs",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "DP6",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Guia do usuário": {
+    "message": "Guia do usuário",
+    "description": "Navbar item with label Guia do usuário"
+  },
+  "item.label.Documentação do projeto": {
+    "message": "Documentação do projeto",
+    "description": "Navbar item with label Documentação do projeto"
+  }
+}

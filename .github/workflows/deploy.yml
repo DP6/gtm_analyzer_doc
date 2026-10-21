@@ -1,0 +1,67 @@
+name: Verificar e publicar
+
+on:
+  pull_request:
+  push:
+    branches: [dev]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# TODO: preencher quando o projeto GCP, o domínio e o IAP forem aprovados (plano §10).
+env:
+  PROJECT_ID: TODO-gcp-project
+  PROJECT_NUMBER: 'TODO'
+  REGION: us-central1
+  AR_REPO: ds30-docs
+  SERVICE: ds30-docs
+  INVOKER: group:TODO@dp6.com.br
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: ./scripts/check-docs.sh
+
+  publicar:
+    needs: verificar
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    concurrency:
+      group: publicar
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: google-github-actions/auth@v2
+        with:
+          project_id: ${{ env.PROJECT_ID }}
+          workload_identity_provider: projects/${{ env.PROJECT_NUMBER }}/locations/global/workloadIdentityPools/github/providers/TODO
+          service_account: TODO@${{ env.PROJECT_ID }}.iam.gserviceaccount.com
+      - uses: google-github-actions/setup-gcloud@v2
+      - name: Build, push e deploy
+        run: |
+          set -euo pipefail
+          IMAGE="${REGION}-docker.pkg.dev/${PROJECT_ID}/${AR_REPO}/${SERVICE}:${GITHUB_SHA}"
+          gcloud auth configure-docker "${REGION}-docker.pkg.dev" --quiet
+          docker build -t "$IMAGE" .
+          docker push "$IMAGE"
+          gcloud run deploy "$SERVICE" --image "$IMAGE" --region "$REGION" --port 8080 \
+            --no-allow-unauthenticated --labels="app=ds30-docs,environment=prod,managed-by=manual"
+          gcloud run services add-iam-policy-binding "$SERVICE" \
+            --region "$REGION" --member="$INVOKER" --role=roles/run.invoker

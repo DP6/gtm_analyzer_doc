@@ -1,0 +1,50 @@
+/**
+ * Ubuntu — a fonte oficial da DP6, servida pelo proprio site.
+ *
+ * Sem CDN de proposito: o Polaris e publicado num host interno autenticado, e uma
+ * chamada a um dominio externo seria um ponto de falha sem contrapartida. A UFL
+ * permite a redistribuicao; a licenca acompanha os arquivos em static/fonts/UFL.txt.
+ *
+ * Cinco pesos. Light e os italicos de Medium ficaram de fora — nao ha uso previsto
+ * e cada arquivo passa de 250 KB numa pagina que costuma abrir por VPN.
+ */
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}

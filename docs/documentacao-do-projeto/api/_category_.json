@@ -1,0 +1,9 @@
+{
+  "label": "API",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/doc-projeto-api",
+    "description": "Como a API do backend funciona: convenções e uma página por router."
+  }
+}

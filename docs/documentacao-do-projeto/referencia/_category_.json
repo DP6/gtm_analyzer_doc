@@ -1,0 +1,9 @@
+{
+  "label": "Referência",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/doc-projeto-referencia",
+    "description": "Dicionário de dados, contrato de status do UPD e variáveis de ambiente."
+  }
+}

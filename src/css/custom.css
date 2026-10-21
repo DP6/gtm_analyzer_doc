@@ -1,0 +1,72 @@
+/* Tokens do DP6 Design System, copiados do tema do Polaris (reference/polaris-heap-main). */
+@import './fonts.css';
+
+:root {
+  --dp6-amarelo: #ffb302;
+  --dp6-preto: #1d1d1b;
+  --neutral-0: #ffffff;
+  --neutral-200: #dfe0e2;
+  --neutral-600: #474d55;
+  --neutral-800: #262728;
+  --amarelo-300: #ffcc5c;
+
+  --ifm-color-primary: #ffb302;
+  --ifm-color-primary-dark: #e39c00;
+  --ifm-color-primary-darker: #d69300;
+  --ifm-color-primary-darkest: #b87e00;
+  --ifm-color-primary-light: #ffbd2e;
+  --ifm-color-primary-lighter: #ffcc5c;
+  --ifm-color-primary-lightest: #ffe1a3;
+  --ifm-font-family-base: 'Ubuntu', Verdana, 'Segoe UI', sans-serif;
+  --ifm-heading-font-weight: 500;
+  --ifm-button-border-radius: 4px;
+}
+
+[data-theme='dark'] {
+  --ifm-background-color: var(--dp6-preto);
+  --ifm-background-surface-color: var(--neutral-800);
+  --ifm-link-hover-color: var(--amarelo-300);
+}
+
+/* Claro: amarelo é acento, não cor de texto — primary vira preto e o link ganha sublinhado amarelo. */
+[data-theme='light'] {
+  --ifm-background-color: var(--neutral-0);
+  --ifm-background-surface-color: var(--neutral-0);
+  --ifm-color-primary: #1d1d1b;
+  --ifm-color-primary-dark: #181817;
+  --ifm-color-primary-darker: #161615;
+  --ifm-color-primary-darkest: #121211;
+  --ifm-color-primary-light: #33373c;
+  --ifm-color-primary-lighter: #474d55;
+  --ifm-color-primary-lightest: #5b626c;
+  --ifm-link-color: var(--dp6-preto);
+  --ifm-link-hover-color: var(--dp6-preto);
+  --ifm-font-color-base: var(--dp6-preto);
+  --ifm-color-content-secondary: var(--neutral-600);
+}
+[data-theme='light'] .markdown a:not(.button) {
+  text-decoration: underline;
+  text-decoration-color: var(--dp6-amarelo);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+/* Navbar e rodapé pretos nos dois temas. */
+.navbar,
+.navbar-sidebar {
+  --ifm-navbar-background-color: var(--dp6-preto);
+  --ifm-navbar-link-color: #ffffff;
+}
+.navbar__title,
+.navbar__link {
+  color: #ffffff;
+}
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--dp6-amarelo);
+}
+
+.markdown img {
+  max-width: 100%;
+  height: auto;
+}

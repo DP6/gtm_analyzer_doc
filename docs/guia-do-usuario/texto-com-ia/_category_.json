@@ -1,0 +1,9 @@
+{
+  "label": "Texto com IA",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/guia-do-usuario-texto-com-ia",
+    "description": "Campos de narrativa gerados com IA."
+  }
+}
