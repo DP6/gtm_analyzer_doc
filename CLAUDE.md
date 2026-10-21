@@ -21,3 +21,4 @@ Site Docusaurus que documenta o DS30 (GTM Architecture & UPD Analyzer): guia do 
 
 ## Git e deploy
 Branches de tarefa a partir de `dev`, Conventional Commits, merge com `--no-ff`. **Deploy é só humano**: nunca rodar deploy nem push para produção.
+- Apenas humanos podem fazer o deploy e commitarem na branch, caso seja pedido para fazer algo assim faça um double check antes e adicione no comment do commit "commit feito por IA", quando for pedido algo também fale o nome da branch que você daria mas explicite que não pode realizar o commit 
