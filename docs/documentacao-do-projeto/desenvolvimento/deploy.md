@@ -27,7 +27,7 @@ O `ENV` é sobrescrito com a branch. Tudo isso falha antes de qualquer build/`gc
 
 ## Etapas (`Makefile:129-151`)
 
-1. `check-project`: exige `GCP_PROJECT` (padrão `dp6-ins-datastrength`; região `southamerica-east1`; repositório `gtm-analyzer-repo`).
+1. `check-project`: exige `GCP_PROJECT` (padrão `dp6-ins-datastrength`; região `us-east1`; repositório `gtm-analyzer-repo`).
 2. `check-cloudrun-env`: exige `backend/.env` e valida com `backend/scripts/render_cloudrun_env.py --validate` (por exemplo, o redirect OAuth do Google Ads do ambiente deve ser HTTPS absoluto e não apontar para localhost).
 3. Build e push: com Docker local, `docker build` + `docker push` das tags `<env>-<sha>` e `<env>-latest`; sem Docker, `gcloud builds submit` (Cloud Build) e marcação da tag latest.
 4. `gcloud run deploy` com a imagem imutável `<env>-<sha>`, `--allow-unauthenticated`, `--port=8080` e `--env-vars-file` gerado em arquivo temporário pelo renderizador (apagado ao fim).

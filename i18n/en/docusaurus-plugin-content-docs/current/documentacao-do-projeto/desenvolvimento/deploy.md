@@ -27,7 +27,7 @@ AI never runs `make deploy` nor publishes to production. Any change to `Makefile
 
 ## Steps (`Makefile:129-151`)
 
-1. `check-project`: requires `GCP_PROJECT` (default `dp6-ins-datastrength`; region `southamerica-east1`; repository `gtm-analyzer-repo`).
+1. `check-project`: requires `GCP_PROJECT` (default `dp6-ins-datastrength`; region `us-east1`; repository `gtm-analyzer-repo`).
 2. `check-cloudrun-env`: requires `backend/.env` and validates with `backend/scripts/render_cloudrun_env.py --validate` (for example, the environment's Google Ads OAuth redirect must be an absolute HTTPS URL and not point to localhost).
 3. Build and push: with local Docker, `docker build` + `docker push` of the tags `<env>-<sha>` and `<env>-latest`; without Docker, `gcloud builds submit` (Cloud Build) and tagging latest.
 4. `gcloud run deploy` with the immutable image `<env>-<sha>`, `--allow-unauthenticated`, `--port=8080` and `--env-vars-file` generated in a temporary file by the renderer (deleted at the end).

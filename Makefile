@@ -1,6 +1,6 @@
 # Deploy no Cloud Run (mesmo projeto/região do gtm_analyzer_app, repositório próprio).
 GCP_PROJECT ?= dp6-ins-datastrength
-GCP_REGION  ?= southamerica-east1
+GCP_REGION  ?= us-east1
 REPO_NAME   ?= gtm-analyzer-docs-repo
 SERVICE     ?= gtm-analyzer-docs
 ALLOWED_DOMAIN ?= dp6.com.br
